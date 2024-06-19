@@ -1,7 +1,7 @@
 # Личный проект «Кекстаграм»
 
 * Студент: [Александр  Зуев](https://up.htmlacademy.ru/javascript/32/user/2420613).
-* Наставник: `Неизвестно`.
+https://github.com/htmlacademy-javascript/2420613-kekstagram-32/pull/2
 
 ---
 
