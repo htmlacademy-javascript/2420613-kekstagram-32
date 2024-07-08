@@ -51,7 +51,7 @@ const userName = [
   'Марина',
   'Стас',
   'Роналдо'
-]
+];
 
 const MESSAGE = [
   'Всё отлично!',
@@ -62,14 +62,6 @@ const MESSAGE = [
   'Лица у людей на фотке перекошены, как будто их избивают. Как можно было поймать такой неудачный момент?!'
 ];
 
-
-const createComment = () => ({
-  id: getRandomInteger(1, 200),
-  avarat: 'img/avatar-' + getRandomInteger(1, 6) + '.svg',
-  message: MESSAGE[getRandomInteger(0, MESSAGE.length - 1)],
-  name: userName[getRandomInteger(0, userName.length - 1)]
-});
-
 const getRandomInteger = (a, b) => {
   const lower = Math.ceil(Math.min(a, b));
   const upper = Math.floor(Math.max(a, b));
@@ -77,11 +69,18 @@ const getRandomInteger = (a, b) => {
   return Math.floor(result);
 };
 
+const createComment = () => ({
+  id: getRandomInteger(1, 200),
+  avarat: `img/avatar-${getRandomInteger(1, 6)}.svg`,
+  message: MESSAGE[getRandomInteger(0, MESSAGE.length - 1)],
+  name: userName[getRandomInteger(0, userName.length - 1)]
+});
+
 const arrayComments = Array.from({ length: 30 }, createComment);
 
 const createDescription = () => ({
   id: getRandomInteger(1, 25),
-  url: 'photos/' + getRandomInteger(1, 25) + '.jpg',
+  url: `photos/${getRandomInteger(1, 25)}.jpg`,
   description: DESCRIPTION[getRandomInteger(0, DESCRIPTION.length - 1)],
   likes: getRandomInteger(15, 200),
   comments: arrayComments[getRandomInteger(0, arrayComments.length - 1)],
@@ -89,3 +88,4 @@ const createDescription = () => ({
 
 const arrayPhotos = Array.from({ length: 25 }, createDescription);
 
+console.log(arrayPhotos);
