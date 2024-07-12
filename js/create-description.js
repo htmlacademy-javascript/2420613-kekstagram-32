@@ -1,5 +1,5 @@
 import { getRandomInteger } from './utils.js';
-import { DESCRIPTION, userName, MESSAGE } from './data.js';
+import { DESCRIPTION } from './data.js';
 import { arrayComments } from './main.js';
 
 

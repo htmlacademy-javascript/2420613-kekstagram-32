@@ -9,4 +9,4 @@ export const arrayComments = Array.from({ length: 30 }, createComment);
 const arrayPhotos = Array.from({ length: 25 }, createDescription);
 
 // для проверки
-console.log(arrayComments, arrayPhotos);
+// console.log(arrayComments, arrayPhotos);
