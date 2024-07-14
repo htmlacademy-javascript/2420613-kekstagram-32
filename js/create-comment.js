@@ -8,9 +8,9 @@ const createComment = () => ({
   name: userName[getRandomInteger(0, userName.length - 1)],
 });
 
-const arrayComments = Array.from({ length: 30 }, createComment);
+// const arrayComments = Array.from({ length: 30 }, createComment);
 
 export { createComment };
 // eslint-disable-next-line no-console
-console.log('создание массива комментариев:', arrayComments);
+// console.log('создание массива комментариев:', arrayComments);
 
