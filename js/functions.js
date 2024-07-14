@@ -23,3 +23,12 @@ getPalindrome(' То По  т');
 getPalindrome('Тряпка');
 getPalindrome('Лёша на полке клопа нашёл ');
 
+const getNumber = function (str, num) {
+  return parseInt(str, num);
+};
+
+getNumber('2023 год', 10);
+getNumber('2023 год');
+getNumber('агент 007');
+getNumber('');
+getNumber('а я томат');
