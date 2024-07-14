@@ -1,7 +1,8 @@
 import { getRandomInteger } from './utils.js';
 import { DESCRIPTION } from './data.js';
-import { arrayComments } from './main.js';
+import { arrayComments } from './create-comment.js';
 
+// console.log(arrayComments);
 
 export const createDescription = () => ({
   id: getRandomInteger(1, 25),
